@@ -43,6 +43,11 @@ var legacyLayouts = [
         ["a", "s", "d", "f", "g", "h", "j", "k", "l", "ö", "ä"],
         ["z", "x", "c", "v", "b", "n", "m"]
     ] },
+    { name: "Svorak A5", script: "latin", languages: ["SV"], rows: [
+        ["å", "ä", "ö", "p", "y", "f", "g", "c", "r", "l"],
+        ["a", "o", "e", "u", "i", "d", "h", "t", "n", "s"],
+        [".", "q", "j", "k", "x", "b", "m", "w", "v", "z"]
+    ] },
     // Danish and Norwegian are not the same arrangement: Danish ends the home
     // row with "æ ø" and Norwegian with "ø æ".  This entry is the Norwegian
     // one; Danish uses the upstream "nordic" layout below.
@@ -201,6 +206,11 @@ var secondarySymbols = [
     ["@", "#", "&", "*", "-", "+", "=", "(", ")", "{", "}", "?"],
     ["_", "€", "\"", "'", ":", ";", "/", "\\", "|", "<", ">", "~"]
 ]
+// var svorakA5Symbols = [
+//     ["{", "}", "[", "]", "$", "\"", "?", "&", "<", ">", "", "~"],
+//     [";", "/", "(", ")", "|", "#", "^", "#", "\"", "~", "`", "*"],
+//     [":", "=", "@, "\", "\\", "%", "`", "", "“", "", "", ""]
+// ]
 
 // Imported layouts can have one or two extra rows of national letters above
 // their three main typing rows. Place the shared shortcuts on those main rows
@@ -270,7 +280,7 @@ var count = layouts.length
 // layout editor and Settings continue to show the full descriptive names.
 var menuNames = [
     "QWERTY", "QWERTZ", "AZERTY", "TR-Q", "DE-QWERTZ", "ES-QWERTY",
-    "SE/FI", "NO", "RO-QWERTY", "COLEMAK", "COLEMAK-DH", "DVORAK",
+    "SE/FI", "SVORAKA5", "NO", "RO-QWERTY", "COLEMAK", "COLEMAK-DH", "DVORAK",
     "WORKMAN", "ARABIC", "GREEK", "CYRILLIC", "TR-F", "SL-QWERTZ",
     "HR/SR-QW", "SR-CYRL", "PERSIAN"
 ]
